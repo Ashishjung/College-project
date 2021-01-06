@@ -63,6 +63,7 @@
 <p id="p17">Bed:1</p>
 <button type="button" id="booknow">Booknow</button>
 <button type="button" id="removedetail">Remove</button>
+<button type="button" id="ordernow">OrderNow</button>
 </div>
 </div>
 </div>
@@ -225,7 +226,7 @@ Consonantia.
   <div id="foods3">
     <div id="foodsimage3"></div>
     <div id="foodsdetail3">
-      <p id="p6">Soda juice</p>
+      <p id="p6">Soft Drink</p>
       <button type="button" id="Drink">Add to cart</button>
     </div>
   </div>
@@ -239,14 +240,40 @@ Consonantia.
 </div>
 </div>
 <div id="contact">
+<h1>Contact us</h1>
+<div id="contact-box">
+
+  <div id="contactdetail1">
+    <i class="fas fa-home" id="homeicon"></i>
+    <p id="p20">
+     Ghorahi Dang, Nepal
+     </p>
+     <i class="fas fa-phone-alt" id="call"></i>
+     <p id="p21">
+       +977 9847820314
+     </p>
+     <i class="fas fa-envelope" id="email"></i>
+     <p id="p22">
+       Ahhotel@gmail.com
+     </p>
+      </div>
+  <div id="contactdetail2">
+    <input type="text" id="txt1" placeholder="Enter your name">
+    <input type="text" id="txt2" placeholder="Enter email address">
+    <textarea>
+      Write a message
+    </textarea>
+    <button type="button" id="sendmsgbuton">Send message</button>
+  </div>
 </div>
+</div>
+<div id="footer"></div>
 </div>
  </div>
       </div>
        <script src="https://cdn.bootcdn.net/ajax/libs/gsap/1.10.0/TweenMax.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/gsap/1.10.0/TimelineMax.min.js"></script>
- 
-      <script src="project.js"></script>
+ <script src="project.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init({
@@ -254,9 +281,7 @@ Consonantia.
           duration:800,
           easing:"ease",
           offset:150,
-        
         });
       </script>
-      
-</body>
+    </body>
 </html>

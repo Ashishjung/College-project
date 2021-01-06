@@ -124,6 +124,19 @@ color:#fc3c3c;
     color:white;
     border-radius: .5rem;
  }
+ #ordernow{
+    position: absolute;
+    left:5rem;
+    font-size: 1.2rem;
+    padding: .2rem;
+    bottom: 5.5rem;
+    border:1px solid tomato;
+    background-color: tomato;
+    cursor: pointer;
+    color:white;
+    border-radius: .5rem;
+    display:none;
+ }
  #removedetail{
     position: absolute;
     cursor: pointer;
@@ -173,7 +186,6 @@ h2{
     z-index: 4;
     background-color:white;
 }
-
 .navbar .navbar-nav{
 position: relative;
 left: 33rem;
@@ -190,13 +202,14 @@ left: 33rem;
      display: grid;
     z-index: 0;
     width:100%;
-     height: 800%;
+     height: 850%;
      grid-template-columns: repeat(1,25rem);
      grid-template-columns: repeat(1,20rem);
      grid-auto-rows: 20rem;
    
  }
  #home{
+     
      top:0;
      grid-column: 1/4;
      display: flex;
@@ -854,9 +867,111 @@ background-color: white;
                 border:1px solid #fc3c3c;
                 font-family: 'Fira Sans', sans-serif;
             }
-            
-
-
+            #contact{
+                grid-column: 1/4;
+                grid-row: 14/16;
+                margin-top: 2rem;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                background-color: rgba(0, 0, 0, 0.075);
+              }
+              #contact h1{
+                  position: relative;
+                  left:30rem;
+                  top:2rem;
+                 }
+                 #contact-box{
+                     width: 100%;
+                     height: 87%;
+                     position: absolute;
+                     top:5rem;
+                     display: flex;
+                     flex-wrap: wrap;
+                     justify-content: center;
+             }
+            #contactdetail1{
+                 width:45%;
+                height:80%;
+                font-family: 'Fira Sans', sans-serif;
+             }
+             #p20{
+                position: absolute;
+                top:5rem;
+                left:10rem;
+                font-size: 1.5rem;
+            }
+            #homeicon{
+                position: absolute;
+                top:5rem;
+                left: 7rem;
+                font-size: 2rem;
+                color:rgb(255, 0, 85);
+            }
+            #p21{
+                position: absolute;
+                top:10rem;
+                left:10rem;
+                font-size: 1.5rem;
+                color:rgba(0, 0, 0, 0.733);
+          }
+          #call{
+              position: absolute;
+              top:10rem;
+              left:7rem;
+              font-size: 2rem;
+              color:rgb(255, 0, 85);
+          }
+          #p22{
+              position: absolute;
+              left:10rem;
+              top:15rem;
+              font-size: 1.5rem;
+          }
+          #email{
+              position: absolute;
+              left:7rem;
+              top:15rem;
+              font-size: 2rem;
+              color:rgb(255, 0, 85);
+ }  
+ #contactdetail2{
+     width: 45%;
+     height: 80%;
+   
+ }
+#txt1{
+font-size:1.3rem;
+width: 30%;
+position: absolute;
+top:5rem;
+padding: .2rem;
+}
+#txt2{
+    font-size: 1.3rem;
+    width: 30%;
+    position: absolute;
+    top:10rem;
+    padding: .2rem;
+}
+textarea{
+ width: 30%;
+    position: absolute;
+    padding: .2rem;
+    top:15rem;
+    color: rgba(0, 0, 0, 0.425);
+    }
+          #sendmsgbuton{
+              position: absolute;
+              top:20rem;
+              margin-left: 5rem;
+              font-size: 1.5rem;
+              padding: .3rem;
+              border-radius: .5rem;
+              background-color:#fc3c3c;
+              border: 2px solid #fc3c3c;
+              color:white;
+          }  
 
 @media (max-width:768px){
     /* #Main-box{
@@ -1272,7 +1387,7 @@ height:25%;
                     font-size: 1.1rem;
                     bottom: 10rem;
                  }
-                 #booknow{
+                 #booknow,#ordernow{
                     position: absolute;
                     left:1rem;
                     font-size: 1.2rem;
@@ -1290,7 +1405,108 @@ height:25%;
                      #p19{
                         position: absolute;
                         font-size: 2rem;
-                    
-                        bottom: 10rem;
+                         bottom: 10rem;
                     }
+                    #contact{
+                        grid-column: 1/4;
+                        grid-row: 14/16;
+                        margin-top: 2rem;
+                        display: flex;
+                        height: 70%;
+                        position: relative;
+                        flex-wrap: wrap;
+                        background-color: rgba(0, 0, 0, 0.075);
+                      }
+                      #contact h1{
+                          position: relative;
+                          left:10rem;
+                          font-size: 2rem;
+                          top:2rem;
+                         }
+                         #p20{
+                            position: absolute;
+                            top:3rem;
+                            left:3rem;
+                            font-size: 1rem;
+                        }
+                        #homeicon{
+                            position: absolute;
+                            top:3rem;
+                            left: 1rem;
+                            font-size: 1.5rem;
+                            color:rgb(255, 0, 85);
+                        }
+                        #p21{
+                            position: absolute;
+                            top:7rem;
+                            left:3rem;
+                            font-size: 1rem;
+                            color:rgba(0, 0, 0, 0.733);
+                      }
+                      #call{
+                          position: absolute;
+                          top:7rem;
+                          left:1rem;
+                          font-size: 1.5rem;
+                          color:rgb(255, 0, 85);
+                      }
+                      #p22{
+                        position: absolute;
+                        left:3rem;
+                        top:12rem;
+                        font-size: 1rem;
+                    }
+                    #email{
+                        position: absolute;
+                        left:1rem;
+                        top:12rem;
+                        font-size: 1.5rem;
+                        color:rgb(255, 0, 85);
+           } 
+           #contactdetail1{
+            width:45%;
+           height:80%;
+           top:4rem;
+           font-family: 'Fira Sans', sans-serif;
+        }
+           #contactdetail2{
+            width: 45%;
+            height: 80%;
+          }
+       #txt1{
+       font-size:1.3rem;
+       width: 40%;
+       position: absolute;
+       top:3rem;
+       padding: .3rem;
+       right: 2rem;
+       
+       }
+       #txt2{
+           font-size: 1.3rem;
+           width: 40%;
+           position: absolute;
+           top:7rem;
+           right: 2rem;
+           padding: .2rem;
+       }
+       textarea{
+        width: 40%;
+           position: absolute;
+           padding: .2rem;
+           right: 2rem;
+           top:12rem;
+           color: rgba(0, 0, 0, 0.425);
+           }
+                 #sendmsgbuton{
+                     position: absolute;
+                     top:17rem;
+                     margin-left: 1.5rem;
+                     font-size: 1.3rem;
+                     padding: .3rem;
+                     border-radius: .5rem;
+                     background-color:#fc3c3c;
+                     border: 2px solid #fc3c3c;
+                     color:white;
+                 }  
 }
